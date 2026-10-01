@@ -1,0 +1,18 @@
+Classification Report for CNN_Advance (retrained DenseNet121, 10 epochs, T4 GPU)
+============================================================
+               precision    recall  f1-score   support
+
+    fractured       0.94      0.92      0.93       915
+not fractured       0.92      0.95      0.93       911
+
+     accuracy                           0.93      1826
+    macro avg       0.93      0.93      0.93      1826
+ weighted avg       0.93      0.93      0.93      1826
+
+ROC-AUC: 0.9829
+
+Confusion matrix (rows=true, cols=pred, order=['fractured', 'not fractured']):
+[[844  71]
+ [ 50 861]]
+
+Class index mapping: {'fractured': 0, 'not fractured': 1}

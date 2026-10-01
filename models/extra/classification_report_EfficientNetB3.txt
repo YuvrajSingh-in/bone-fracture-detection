@@ -1,0 +1,10 @@
+Classification Report for EfficientNetB3
+========================================
+               precision    recall  f1-score   support
+
+    fractured       0.97      0.95      0.96       915
+not fractured       0.95      0.97      0.96       911
+
+     accuracy                           0.96      1826
+    macro avg       0.96      0.96      0.96      1826
+ weighted avg       0.96      0.96      0.96      1826

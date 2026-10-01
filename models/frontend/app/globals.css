@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --primary: #38bdf8;
+  /* Sky 400 - Glowing Blue */
+  --primary-foreground: #000000;
+
+  --secondary: #2dd4bf;
+  /* Teal 400 */
+  --secondary-foreground: #000000;
+
+  --accent: #111111;
+  --accent-foreground: #e0e0e0;
+
+  --card: #0a0a0a;
+  --card-foreground: #ffffff;
+
+  --border: #333333;
+  --input: #1a1a1a;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities for Cinematic UI */
+.clip-text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-white to-secondary;
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+/* Smooth Scroll Container */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+/* Smooth Scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for Modals */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.3) rgba(255, 255, 255, 0.05);
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.3);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.5);
+}

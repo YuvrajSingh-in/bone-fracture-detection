@@ -1,0 +1,41 @@
+{
+  "EfficientNetB3": {
+    "framework": "keras",
+    "file_size_mb": 84.93,
+    "parameters": 11177264,
+    "parameters_millions": 11.18,
+    "gflops_per_inference": 1.923,
+    "cold_load_seconds": 3.335,
+    "latency_ms_mean": 436.69,
+    "latency_ms_std": 12.6,
+    "latency_ms_median": 433.32,
+    "latency_ms_min": 422.45,
+    "throughput_img_per_sec": 2.29
+  },
+  "DenseNet121": {
+    "framework": "pytorch",
+    "file_size_mb": 27.12,
+    "parameters": 6954881,
+    "parameters_millions": 6.95,
+    "gflops_per_inference": 5.792,
+    "cold_load_seconds": 0.254,
+    "latency_ms_mean": 144.16,
+    "latency_ms_std": 4.35,
+    "latency_ms_median": 143.93,
+    "latency_ms_min": 137.66,
+    "throughput_img_per_sec": 6.94
+  },
+  "MobileNetV2": {
+    "framework": "keras",
+    "file_size_mb": 10.97,
+    "parameters": 2422081,
+    "parameters_millions": 2.42,
+    "gflops_per_inference": 0.599,
+    "cold_load_seconds": 1.097,
+    "latency_ms_mean": 115.08,
+    "latency_ms_std": 3.65,
+    "latency_ms_median": 114.97,
+    "latency_ms_min": 109.0,
+    "throughput_img_per_sec": 8.69
+  }
+}

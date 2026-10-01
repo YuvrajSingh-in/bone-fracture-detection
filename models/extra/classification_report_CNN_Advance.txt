@@ -1,0 +1,10 @@
+Classification Report for CNN_Advance
+========================================
+               precision    recall  f1-score   support
+
+    fractured       0.59      0.43      0.50       915
+not fractured       0.55      0.71      0.62       911
+
+     accuracy                           0.57      1826
+    macro avg       0.57      0.57      0.56      1826
+ weighted avg       0.57      0.57      0.56      1826

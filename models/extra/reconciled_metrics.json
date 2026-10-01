@@ -1,0 +1,98 @@
+{
+  "EfficientNetB3": {
+    "confusion_matrix": [
+      [
+        870,
+        45
+      ],
+      [
+        34,
+        877
+      ]
+    ],
+    "accuracy": 0.9567360350492881,
+    "fractured": {
+      "precision": 0.9623893805309734,
+      "recall": 0.9508196721311475,
+      "f1-score": 0.9565695437053326,
+      "support": 915.0
+    },
+    "not fractured": {
+      "precision": 0.9511930585683297,
+      "recall": 0.9626783754116356,
+      "f1-score": 0.9569012547735952,
+      "support": 911.0
+    },
+    "macro avg": {
+      "precision": 0.9567912195496515,
+      "recall": 0.9567490237713916,
+      "f1-score": 0.9567353992394639,
+      "support": 1826.0
+    },
+    "roc_auc_fractured_positive": 0.9911200686209235
+  },
+  "MobileNetV2": {
+    "confusion_matrix": [
+      [
+        577,
+        338
+      ],
+      [
+        86,
+        825
+      ]
+    ],
+    "accuracy": 0.7677984665936474,
+    "fractured": {
+      "precision": 0.8702865761689291,
+      "recall": 0.6306010928961748,
+      "f1-score": 0.7313054499366286,
+      "support": 915.0
+    },
+    "not fractured": {
+      "precision": 0.709372312983663,
+      "recall": 0.9055982436882547,
+      "f1-score": 0.7955641272902604,
+      "support": 911.0
+    },
+    "macro avg": {
+      "precision": 0.7898294445762961,
+      "recall": 0.7680996682922148,
+      "f1-score": 0.7634347886134445,
+      "support": 1826.0
+    },
+    "roc_auc_fractured_positive": 0.8975160905268336
+  },
+  "DenseNet121": {
+    "confusion_matrix": [
+      [
+        843,
+        72
+      ],
+      [
+        50,
+        861
+      ]
+    ],
+    "accuracy": 0.9331872946330778,
+    "fractured": {
+      "precision": 0.9440089585666294,
+      "recall": 0.921311475409836,
+      "f1-score": 0.9325221238938053,
+      "support": 915.0
+    },
+    "not fractured": {
+      "precision": 0.9228295819935691,
+      "recall": 0.9451152579582875,
+      "f1-score": 0.9338394793926247,
+      "support": 911.0
+    },
+    "macro avg": {
+      "precision": 0.9334192702800992,
+      "recall": 0.9332133666840619,
+      "f1-score": 0.933180801643215,
+      "support": 1826.0
+    },
+    "roc_auc_fractured_positive": 0.9824008925518705
+  }
+}

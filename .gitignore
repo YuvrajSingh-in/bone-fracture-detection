@@ -1,0 +1,40 @@
+# --- dependencies & build output ---
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.next/
+dist/
+build/
+.vercel/
+*.log
+
+# --- secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+auth.json
+.firebaserc
+firebase.json
+firebase-debug.log
+
+# --- OS noise ---
+.DS_Store
+Thumbs.db
+~$*
+
+# --- dataset: 11,778 X-ray images, not redistributable ---
+DATA/
+# --- model weights: 85-127MB each, over GitHub's limit ---
+*.keras
+*.h5
+*.pth
+*.pt
+*.tflite
+models/backend/models/
+models/backend/new model/
+models/backend/uploads/
+models/extra/quantized/

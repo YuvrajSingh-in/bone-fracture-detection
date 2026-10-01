@@ -1,0 +1,101 @@
+{
+  "assumptions": {
+    "train_device": "NVIDIA Tesla T4 (Google Colab)",
+    "train_power_w": 70,
+    "train_pue": 1.09,
+    "infer_device": "Intel Core i5-1235U (12 threads)",
+    "infer_power_w": 15,
+    "infer_pue": 1.0,
+    "grid_gco2e_per_kwh": 475,
+    "grid_ireland_gco2e_per_kwh": 324,
+    "deployment_scans_per_day": 500
+  },
+  "annual_inferences": 182500,
+  "models": {
+    "EfficientNetB3": {
+      "accuracy": 0.9567,
+      "accuracy_pct": 95.7,
+      "size_mb": 84.93,
+      "params_m": 11.18,
+      "gflops": 1.923,
+      "latency_ms": 436.69,
+      "train_seconds": 1125,
+      "train_kwh": 0.023844,
+      "train_gco2e": 11.33,
+      "energy_per_inference_kwh": 1.8195416666666667e-06,
+      "energy_per_inference_j": 6.55,
+      "annual_inference_kwh": 0.3321,
+      "annual_total_kwh": 0.3559,
+      "annual_gco2e": 169.1,
+      "gco2e_per_accuracy_point": 1.767,
+      "accuracy_per_mb": 1.126,
+      "wasted_train_kwh": 0.0
+    },
+    "DenseNet121": {
+      "accuracy": 0.9332,
+      "accuracy_pct": 93.3,
+      "size_mb": 27.12,
+      "params_m": 6.95,
+      "gflops": 5.792,
+      "latency_ms": 144.16,
+      "train_seconds": 687,
+      "train_kwh": 0.014561,
+      "train_gco2e": 6.92,
+      "energy_per_inference_kwh": 6.006666666666667e-07,
+      "energy_per_inference_j": 2.162,
+      "annual_inference_kwh": 0.1096,
+      "annual_total_kwh": 0.1242,
+      "annual_gco2e": 59.0,
+      "gco2e_per_accuracy_point": 0.632,
+      "accuracy_per_mb": 3.441,
+      "wasted_train_kwh": 0.0
+    },
+    "MobileNetV2": {
+      "accuracy": 0.7678,
+      "accuracy_pct": 76.8,
+      "size_mb": 10.97,
+      "params_m": 2.42,
+      "gflops": 0.599,
+      "latency_ms": 115.08,
+      "train_seconds": 4963,
+      "train_kwh": 0.105188,
+      "train_gco2e": 49.96,
+      "energy_per_inference_kwh": 4.795e-07,
+      "energy_per_inference_j": 1.726,
+      "annual_inference_kwh": 0.0875,
+      "annual_total_kwh": 0.1927,
+      "annual_gco2e": 91.5,
+      "gco2e_per_accuracy_point": 1.192,
+      "accuracy_per_mb": 6.999,
+      "wasted_train_kwh": 0.105188
+    }
+  },
+  "break_even": {
+    "MobileNetV2_vs_DenseNet121": {
+      "break_even_inferences": 747953,
+      "break_even_days_at_500_per_day": 1495.9,
+      "break_even_years_at_500_per_day": 4.1
+    },
+    "EfficientNetB3_vs_DenseNet121": {
+      "break_even_inferences": null,
+      "note": "no break-even: dominated on both training and inference"
+    }
+  },
+  "sensitivity": {
+    "EfficientNetB3": {
+      "annual_gco2e_global_475": 169.1,
+      "annual_gco2e_ireland_324": 115.3,
+      "annual_gco2e_infer_power_55w": 589.7
+    },
+    "DenseNet121": {
+      "annual_gco2e_global_475": 59.0,
+      "annual_gco2e_ireland_324": 40.2,
+      "annual_gco2e_infer_power_55w": 197.8
+    },
+    "MobileNetV2": {
+      "annual_gco2e_global_475": 91.5,
+      "annual_gco2e_ireland_324": 62.4,
+      "annual_gco2e_infer_power_55w": 202.4
+    }
+  }
+}

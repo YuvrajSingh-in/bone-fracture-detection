@@ -1,0 +1,383 @@
+{
+  "EfficientNetB3": {
+    "roc_auc": 0.9911,
+    "at_default_0.5": {
+      "threshold": 0.5,
+      "TP": 870,
+      "FN": 45,
+      "FP": 34,
+      "TN": 877,
+      "recall_fractured": 0.9508,
+      "precision_fractured": 0.9624,
+      "specificity": 0.9627,
+      "accuracy": 0.9567
+    },
+    "at_recall_95": {
+      "threshold": 0.5143,
+      "TP": 870,
+      "FN": 45,
+      "FP": 34,
+      "TN": 877,
+      "recall_fractured": 0.9508,
+      "precision_fractured": 0.9624,
+      "specificity": 0.9627,
+      "accuracy": 0.9567
+    },
+    "youden_J": {
+      "threshold": 0.2759,
+      "TP": 889,
+      "FN": 26,
+      "FP": 44,
+      "TN": 867,
+      "recall_fractured": 0.9716,
+      "precision_fractured": 0.9528,
+      "specificity": 0.9517,
+      "accuracy": 0.9617
+    },
+    "cost_sensitive_10x": {
+      "threshold": 0.0535,
+      "TP": 908,
+      "FN": 7,
+      "FP": 127,
+      "TN": 784,
+      "recall_fractured": 0.9923,
+      "precision_fractured": 0.8773,
+      "specificity": 0.8606,
+      "accuracy": 0.9266,
+      "expected_cost_10x": 197
+    },
+    "sweep": [
+      {
+        "threshold": 0.1,
+        "TP": 899,
+        "FN": 16,
+        "FP": 93,
+        "TN": 818,
+        "recall_fractured": 0.9825,
+        "precision_fractured": 0.9062,
+        "specificity": 0.8979,
+        "accuracy": 0.9403
+      },
+      {
+        "threshold": 0.2,
+        "TP": 892,
+        "FN": 23,
+        "FP": 51,
+        "TN": 860,
+        "recall_fractured": 0.9749,
+        "precision_fractured": 0.9459,
+        "specificity": 0.944,
+        "accuracy": 0.9595
+      },
+      {
+        "threshold": 0.3,
+        "TP": 884,
+        "FN": 31,
+        "FP": 43,
+        "TN": 868,
+        "recall_fractured": 0.9661,
+        "precision_fractured": 0.9536,
+        "specificity": 0.9528,
+        "accuracy": 0.9595
+      },
+      {
+        "threshold": 0.4,
+        "TP": 874,
+        "FN": 41,
+        "FP": 34,
+        "TN": 877,
+        "recall_fractured": 0.9552,
+        "precision_fractured": 0.9626,
+        "specificity": 0.9627,
+        "accuracy": 0.9589
+      },
+      {
+        "threshold": 0.5,
+        "TP": 870,
+        "FN": 45,
+        "FP": 34,
+        "TN": 877,
+        "recall_fractured": 0.9508,
+        "precision_fractured": 0.9624,
+        "specificity": 0.9627,
+        "accuracy": 0.9567
+      },
+      {
+        "threshold": 0.6,
+        "TP": 859,
+        "FN": 56,
+        "FP": 30,
+        "TN": 881,
+        "recall_fractured": 0.9388,
+        "precision_fractured": 0.9663,
+        "specificity": 0.9671,
+        "accuracy": 0.9529
+      },
+      {
+        "threshold": 0.7,
+        "TP": 845,
+        "FN": 70,
+        "FP": 22,
+        "TN": 889,
+        "recall_fractured": 0.9235,
+        "precision_fractured": 0.9746,
+        "specificity": 0.9759,
+        "accuracy": 0.9496
+      }
+    ]
+  },
+  "DenseNet121": {
+    "roc_auc": 0.9824,
+    "at_default_0.5": {
+      "threshold": 0.5,
+      "TP": 843,
+      "FN": 72,
+      "FP": 50,
+      "TN": 861,
+      "recall_fractured": 0.9213,
+      "precision_fractured": 0.944,
+      "specificity": 0.9451,
+      "accuracy": 0.9332
+    },
+    "at_recall_95": {
+      "threshold": 0.33,
+      "TP": 871,
+      "FN": 44,
+      "FP": 82,
+      "TN": 829,
+      "recall_fractured": 0.9519,
+      "precision_fractured": 0.914,
+      "specificity": 0.91,
+      "accuracy": 0.931
+    },
+    "youden_J": {
+      "threshold": 0.5161,
+      "TP": 841,
+      "FN": 74,
+      "FP": 47,
+      "TN": 864,
+      "recall_fractured": 0.9191,
+      "precision_fractured": 0.9471,
+      "specificity": 0.9484,
+      "accuracy": 0.9337
+    },
+    "cost_sensitive_10x": {
+      "threshold": 0.1348,
+      "TP": 905,
+      "FN": 10,
+      "FP": 170,
+      "TN": 741,
+      "recall_fractured": 0.9891,
+      "precision_fractured": 0.8419,
+      "specificity": 0.8134,
+      "accuracy": 0.9014,
+      "expected_cost_10x": 270
+    },
+    "sweep": [
+      {
+        "threshold": 0.1,
+        "TP": 906,
+        "FN": 9,
+        "FP": 216,
+        "TN": 695,
+        "recall_fractured": 0.9902,
+        "precision_fractured": 0.8075,
+        "specificity": 0.7629,
+        "accuracy": 0.8768
+      },
+      {
+        "threshold": 0.2,
+        "TP": 896,
+        "FN": 19,
+        "FP": 124,
+        "TN": 787,
+        "recall_fractured": 0.9792,
+        "precision_fractured": 0.8784,
+        "specificity": 0.8639,
+        "accuracy": 0.9217
+      },
+      {
+        "threshold": 0.3,
+        "TP": 882,
+        "FN": 33,
+        "FP": 93,
+        "TN": 818,
+        "recall_fractured": 0.9639,
+        "precision_fractured": 0.9046,
+        "specificity": 0.8979,
+        "accuracy": 0.931
+      },
+      {
+        "threshold": 0.4,
+        "TP": 857,
+        "FN": 58,
+        "FP": 67,
+        "TN": 844,
+        "recall_fractured": 0.9366,
+        "precision_fractured": 0.9275,
+        "specificity": 0.9265,
+        "accuracy": 0.9315
+      },
+      {
+        "threshold": 0.5,
+        "TP": 843,
+        "FN": 72,
+        "FP": 50,
+        "TN": 861,
+        "recall_fractured": 0.9213,
+        "precision_fractured": 0.944,
+        "specificity": 0.9451,
+        "accuracy": 0.9332
+      },
+      {
+        "threshold": 0.6,
+        "TP": 819,
+        "FN": 96,
+        "FP": 43,
+        "TN": 868,
+        "recall_fractured": 0.8951,
+        "precision_fractured": 0.9501,
+        "specificity": 0.9528,
+        "accuracy": 0.9239
+      },
+      {
+        "threshold": 0.7,
+        "TP": 780,
+        "FN": 135,
+        "FP": 34,
+        "TN": 877,
+        "recall_fractured": 0.8525,
+        "precision_fractured": 0.9582,
+        "specificity": 0.9627,
+        "accuracy": 0.9074
+      }
+    ]
+  },
+  "MobileNetV2": {
+    "roc_auc": 0.8975,
+    "at_default_0.5": {
+      "threshold": 0.5,
+      "TP": 577,
+      "FN": 338,
+      "FP": 86,
+      "TN": 825,
+      "recall_fractured": 0.6306,
+      "precision_fractured": 0.8703,
+      "specificity": 0.9056,
+      "accuracy": 0.7678
+    },
+    "at_recall_95": {
+      "threshold": 0.1378,
+      "TP": 870,
+      "FN": 45,
+      "FP": 313,
+      "TN": 598,
+      "recall_fractured": 0.9508,
+      "precision_fractured": 0.7354,
+      "specificity": 0.6564,
+      "accuracy": 0.8039
+    },
+    "youden_J": {
+      "threshold": 0.243,
+      "TP": 802,
+      "FN": 113,
+      "FP": 222,
+      "TN": 689,
+      "recall_fractured": 0.8765,
+      "precision_fractured": 0.7832,
+      "specificity": 0.7563,
+      "accuracy": 0.8165
+    },
+    "cost_sensitive_10x": {
+      "threshold": 0.0317,
+      "TP": 909,
+      "FN": 6,
+      "FP": 528,
+      "TN": 383,
+      "recall_fractured": 0.9934,
+      "precision_fractured": 0.6326,
+      "specificity": 0.4204,
+      "accuracy": 0.7076,
+      "expected_cost_10x": 588
+    },
+    "sweep": [
+      {
+        "threshold": 0.1,
+        "TP": 888,
+        "FN": 27,
+        "FP": 362,
+        "TN": 549,
+        "recall_fractured": 0.9705,
+        "precision_fractured": 0.7104,
+        "specificity": 0.6026,
+        "accuracy": 0.787
+      },
+      {
+        "threshold": 0.2,
+        "TP": 828,
+        "FN": 87,
+        "FP": 259,
+        "TN": 652,
+        "recall_fractured": 0.9049,
+        "precision_fractured": 0.7617,
+        "specificity": 0.7157,
+        "accuracy": 0.8105
+      },
+      {
+        "threshold": 0.3,
+        "TP": 757,
+        "FN": 158,
+        "FP": 188,
+        "TN": 723,
+        "recall_fractured": 0.8273,
+        "precision_fractured": 0.8011,
+        "specificity": 0.7936,
+        "accuracy": 0.8105
+      },
+      {
+        "threshold": 0.4,
+        "TP": 674,
+        "FN": 241,
+        "FP": 128,
+        "TN": 783,
+        "recall_fractured": 0.7366,
+        "precision_fractured": 0.8404,
+        "specificity": 0.8595,
+        "accuracy": 0.7979
+      },
+      {
+        "threshold": 0.5,
+        "TP": 577,
+        "FN": 338,
+        "FP": 86,
+        "TN": 825,
+        "recall_fractured": 0.6306,
+        "precision_fractured": 0.8703,
+        "specificity": 0.9056,
+        "accuracy": 0.7678
+      },
+      {
+        "threshold": 0.6,
+        "TP": 469,
+        "FN": 446,
+        "FP": 55,
+        "TN": 856,
+        "recall_fractured": 0.5126,
+        "precision_fractured": 0.895,
+        "specificity": 0.9396,
+        "accuracy": 0.7256
+      },
+      {
+        "threshold": 0.7,
+        "TP": 378,
+        "FN": 537,
+        "FP": 34,
+        "TN": 877,
+        "recall_fractured": 0.4131,
+        "precision_fractured": 0.9175,
+        "specificity": 0.9627,
+        "accuracy": 0.6873
+      }
+    ]
+  }
+}
